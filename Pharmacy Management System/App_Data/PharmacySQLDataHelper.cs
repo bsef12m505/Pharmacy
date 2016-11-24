@@ -14,7 +14,7 @@ namespace PharmacyManagementSystem
         public PharmacySQLDataHelper(string userName)
         {
             _userName = userName;
-            _connetionString = "data source=HPWORKSTATION\\SQLEXPRESS;initial catalog=PharmacyRecord;Integrated Security=SSPI";
+            _connetionString = "Server=65e163e0-fa98-4918-b729-a6c501279470.sqlserver.sequelizer.com;Database=db65e163e0fa984918b729a6c501279470;User ID=jnczphsimgzcyqlm;Password=kjKoy2robBKbkjGpFzSiEPsySoHadjtyuAyg7MNCoY4iPQjtRQFF4r6DYmCksqjY;";
             _connection = new SqlConnection(_connetionString);
         }
         public bool GetUser(string password)
