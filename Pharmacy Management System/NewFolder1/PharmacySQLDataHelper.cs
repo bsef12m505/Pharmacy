@@ -14,7 +14,7 @@ namespace PharmacyManagementSystem
         public PharmacySQLDataHelper(string userName)
         {
             _userName = userName;
-            _connetionString = "Server=65e163e0-fa98-4918-b729-a6c501279470.sqlserver.sequelizer.com;Database=db65e163e0fa984918b729a6c501279470;User ID=jnczphsimgzcyqlm;Password=kjKoy2robBKbkjGpFzSiEPsySoHadjtyuAyg7MNCoY4iPQjtRQFF4r6DYmCksqjY;";
+            _connetionString = "Server=d1bd9b58-a553-4b57-9e96-a6cb01292ada.sqlserver.sequelizer.com;Database=dbd1bd9b58a5534b579e96a6cb01292ada;User ID=ygewhklojjpokbmj;Password=ezq8EaDypUchzSNS7c4TTBNRg3jzMrxm2zEhJF76TTMFvtgLS2JwiTKJUGZKYeT7;";
             _connection = new SqlConnection(_connetionString);
         }
         public bool GetUser(string password)
@@ -62,18 +62,18 @@ namespace PharmacyManagementSystem
         public DataTable GetMedicinesAjax()
         {
             DataTable dataTable = new DataTable();
-            try
-            {
+            //try
+            //{
                 _connection.Open();
                 SqlCommand cmd = new SqlCommand("dbo.GetALLMedicines", _connection);
                 cmd.CommandType = CommandType.StoredProcedure;
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 da.Fill(dataTable);
-            }
-            catch (Exception exception)
-            {
-                Console.WriteLine("Failed to get the required user because " + exception.Message);
-            }
+            //}
+            //catch (Exception exception)
+            //{
+            //    Console.WriteLine("Failed to get the required user because " + exception.Message);
+            //}
             return dataTable;
         }
 

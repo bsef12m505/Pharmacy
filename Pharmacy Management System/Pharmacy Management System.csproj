@@ -1117,6 +1117,7 @@
     <Content Include="Content\plugins\input-mask\phone-codes\phone-be.json" />
     <Content Include="Content\plugins\input-mask\phone-codes\phone-codes.json" />
     <None Include="Properties\PublishProfiles\bsef12m505.pubxml" />
+    <None Include="Properties\PublishProfiles\fariyah21.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap\js\bootbox.min.js" />
     <Content Include="Scripts\bootstrap\js\bootstrap.js" />
